@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup Form</title>
+    <link rel="stylesheet" type="text/css" href="signup.css">
+</head>
+<style>
+    body
+{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(251, 243, 243);
+    font-family: 'Arial';
+}
+.signup{
+        width: 382px;
+        
+       height:470px;
+        margin: auto;
+        margin: 20 0 0 450px;
+        padding-top:20px;
+        padding-left: 80px;
+        padding-bottom: 80px;
+        padding-right: 80px;
+        background: rgb(211, 239, 211);
+        border-radius: 15px ;
+
+}
+h2{
+    text-align: center;
+    color:black;
+    padding: 20px;
+}
+label{
+    color:black;
+    font-size: 17px;
+}
+#Uname{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+#Email{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+#Pass{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+
+}
+#ConfirmPass{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+#signup{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    color: black;
+}
+span{
+    color: white;
+    font-size: 17px;
+}
+a{
+    float: right;
+    background-color: grey;
+}
+.logo{
+    
+    height: 150px;
+    width: 150px;
+    border-radius: 50px;
+    
+    margin-left: 110px;
+    margin-right: 30px;
+    
+}
+.username{
+    margin-top: 30px;
+}
+.form{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.signup{
+    background-color: rgb(211, 239, 211);
+}
+</style>
+<body>
+    <h2>Signup Page</h2><br>
+    
+    <div class="signup">
+    <form id="signup" method="get" action="home.html" onsubmit="return validateSignup()">
+        <img src="logo.jpg" class="logo"><br>
+        <div class="form">
+        <label class="username"><b>Username</b></label>
+        <input type="text" name="Uname" id="Uname" placeholder="Username"><br><br>
+        <label><b>Email</b></label>
+        <input type="email" name="Email" id="Email" placeholder="Email"><br><br>
+        <label><b>Password</b></label>
+        <input type="password" name="Pass" id="Pass" placeholder="Password"><br><br>
+        <label><b>Confirm Password</b></label>
+        <input type="password" name="ConfirmPass" id="ConfirmPass" placeholder="Confirm Password"><br><br>
+        <input type="submit" name="signup" id="signup" value="Sign Up Here"><br><br>
+        <input type="checkbox" id="check">
+        <span>Agree to Terms and Conditions</span><br>
+       <a href="#">Forgot Password</a></div>
+    </form>
+</div>
+
+<script>
+    function validateSignup() {
+        // Perform signup validation here (e.g., check if passwords match, validate email)
+        // For now, let's assume signup is successful
+        alert("Signup successful!");
+        return true; // Return false if you want to prevent the form from submitting
+    }
+</script>
+
+</body>
+</html>

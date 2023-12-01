@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Gallery</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+
+        .main-plant-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .plant-container {
+            border: 2px solid #343a40;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .plant-container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .plant-image {
+            height: 200px;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            border-bottom: 2px solid #343a40;
+        }
+
+        .plant-name {
+            text-align: center;
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #343a40;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-plant-container">
+        <div class="plant-container">
+            <a href="aleovera2.html"><div class="plant-image" style="background-image: url('alo2.jpg');"></div>
+            <p class="plant-name"><b>Aloe Vera</b></p></a>
+        </div>
+        <div class="plant-container">
+            <a href="azalea.html"><div class="plant-image" style="background-image: url('azalea.jpg');"></div>
+            <p class="plant-name"><b>Azalea</b></p></a>
+        </div>
+        <div class="plant-container">
+            <a href="cactus.html"><div class="plant-image" style="background-image: url('cactus.jpg');"></div>
+            <p class="plant-name"><b>Cactus</b></p></a>
+        </div>
+        <div class="plant-container">
+            <a href="chrysan.html"><div class="plant-image" style="background-image: url('chrysanthemum.jpg');"></div>
+            <p class="plant-name"><b>Chrysanthemum</b></p></a>
+        </div>
+        <div class="plant-container">
+           <a href="daffodil.html"><div class="plant-image" style="background-image: url('daffodil.jpg');"></div>
+            <p class="plant-name"><b>Daffodil</b></p></a> 
+        </div>
+        <div class="plant-container">
+            <a href="fern.html"><div class="plant-image" style="background-image: url('fern.jpg');"></div>
+            <p class="plant-name"><b>Fern</b></p></a>
+        </div>
+        <div class="plant-container">
+            <a href="gernium.html"><div class="plant-image" style="background-image: url('geranium.jpg');"></div>
+            <p class="plant-name"><b>Geranium</b></p></a>
+        </div>
+        <div class="plant-container">
+            <a href="hosta.html"><div class="plant-image" style="background-image: url('hosta.jpg');"></div>
+            <p class="plant-name"><b>Hosta</b></p></a>
+        </div>
+        <div class="plant-container">
+            <a href="hydrange.html"><div class="plant-image" style="background-image: url('hydrange.jpg');"></div>
+            <p class="plant-name"><b>Hydrange</b></p></a>
+        </div>
+        <div class="plant-container">
+            <a href="lavender.html"><div class="plant-image" style="background-image: url('lavender.jpg');"></div>
+            <p class="plant-name"><b>lavender</b></p></a>
+        </div>
+        <div class="plant-container">
+           <a href="lily.html"><div class="plant-image" style="background-image: url('lily.jpg');"></div>
+            <p class="plant-name"><b>Lilly</b></p></a> 
+        </div>
+        <div class="plant-container">
+           <a href="rose.html"> <div class="plant-image" style="background-image: url('rose.jpg');"></div>
+            <p class="plant-name"><b>Rose</b></p></a>
+        </div>
+        <div class="plant-container">
+            <a href="snapdargon.html"><div class="plant-image" style="background-image: url('snapdragon.jpg');"></div>
+            <p class="plant-name"><b>snapdragon</b></p></a>
+        </div>
+        <div class="plant-container">
+            <a href="sunflower.html"><div class="plant-image" style="background-image: url('sunflower.jpg');"></div>
+            <p class="plant-name"><b>sunflower</b></p></a>
+        </div>
+        <div class="plant-container">
+            <a href="tulip.html"><div class="plant-image" style="background-image: url('tulip.jpg');"></div>
+            <p class="plant-name"><b>Tulip</b></p></a>
+        </div>
+        <div class="plant-container">
+            <a href="bougainvilla.html"><div class="plant-image" style="background-image: url('bougainvilla.jpg');"></div>
+            <p class="plant-name"><b>bougainvilla</b></p></a>
+        </div>
+    </div>
+</body>
+</html>

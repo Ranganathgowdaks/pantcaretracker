@@ -1,0 +1,134 @@
+body{
+    background-image:url( 'guide-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.main-guide{
+display:inline-block;
+display:flex;
+margin-top: 100px;
+
+justify-content: space-evenly;
+
+
+
+
+}
+.main-guide1{
+    display:inline-block;
+    display:flex;
+    margin-top: 150px;
+    justify-content: space-evenly;
+
+}
+.guide1 {
+    height:200px;
+    width:200px;
+    
+    
+   
+    color: white;
+    text-align: center;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out, z-index 0.5s ease-in-out;
+    font-size: 25px;
+
+    
+    
+  
+}
+.guide2{
+    height:200px;
+    width:200px;
+    color: white;
+   
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+
+    
+    transition: transform 0.5s ease-in-out, z-index 0.5s ease-in-out;
+
+}
+.guide3{
+    height:200px;
+    width:200px;
+    color: white;
+    
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+
+   
+    transition: transform 0.5s ease-in-out, z-index 0.5s ease-in-out;
+   
+
+}
+.guide4{
+    height:200px;
+    width:200px;
+    color: white;
+   
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+
+   
+    transition: transform 0.5s ease-in-out, z-index 0.5s ease-in-out;
+
+}
+.guide5{
+    height:200px;
+    width:200px;
+    color: white;
+    
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+
+    
+    transition: transform 0.5s ease-in-out, z-index 0.5s ease-in-out;
+}
+.guide6{
+    height:200px;
+    width:200px;
+    color: white;
+   
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+
+ 
+    transition: transform 0.5s ease-in-out, z-index 0.5s ease-in-out;
+}
+.guide1:hover {
+    transform: scale(1.1); /* Increase size on hover */
+    z-index: 2; /* Bring the paragraph to the front on hover */
+}
+.guide2:hover {
+    transform: scale(1.1); /* Increase size on hover */
+    z-index: 2; /* Bring the paragraph to the front on hover */
+}
+.guide3:hover {
+    transform: scale(1.1); /* Increase size on hover */
+    z-index: 2; /* Bring the paragraph to the front on hover */
+}
+.guide4:hover {
+    transform: scale(1.1); /* Increase size on hover */
+    z-index: 2; /* Bring the paragraph to the front on hover */
+}
+.guide5:hover {
+    transform: scale(1.1); /* Increase size on hover */
+    z-index: 2; /* Bring the paragraph to the front on hover */
+}
+.guide6:hover {
+    transform: scale(1.1); /* Increase size on hover */
+    z-index: 2; /* Bring the paragraph to the front on hover */
+}
+a{
+ color: white;
+ text-decoration: none;
+}

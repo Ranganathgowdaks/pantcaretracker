@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon Plants</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            margin: 20px; /* Added margin for spacing from the edges */
+        }
+
+        .box {
+            flex: 1;
+            max-width: 400px; /* Added a maximum width to make it responsive */
+            height: 250px;
+            background-color: rgb(85, 226, 85); /* Yellow */
+            border: 2px solid #ff9800; /* Darker Yellow */
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #263238; /* Dark Blue-Gray */
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        .box h2 {
+            margin: 0;
+            font-size: 1.8em;
+            color: #263238;
+            margin-bottom: 10px;
+        }
+
+        .box p {
+            margin: 0;
+            font-size: 1.2em;
+            color: #546e7a; /* Blue-Gray */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" onclick="window.location.href='indo.html'">
+            <h2>Indoor Plants</h2>
+            <p>Explore beautiful indoor plants</p>
+        </div>
+        <div class="box" onclick="window.location.href='outdoor.html'">
+            <h2>Outdoor Plants</h2>
+            <p>Discover vibrant outdoor plants</p>
+        </div>
+    </div>
+</body>
+</html>

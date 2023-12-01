@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Shop</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        nav {
+            background-color: #343a40;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+
+        .offer-container {
+            background-color: rgb(85, 226, 85);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .offer-text {
+            font-size: 1.5em;
+            color: #343a40;
+        }
+
+        .main-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .plant-container {
+            border: 2px solid #343a40;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            cursor: pointer;
+            margin: 20px;
+            width: 200px;
+            background-color: #fff;
+        }
+
+        .plant-container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .plant-image {
+            height: 150px;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            border-bottom: 2px solid #343a40;
+        }
+
+        .plant-details {
+            padding: 15px;
+        }
+
+        .plant-name {
+            font-size: 1.2em;
+            color: #343a40;
+            margin-bottom: 5px;
+        }
+
+        .plant-price {
+            font-size: 1em;
+            color: #6c757d;
+        }
+
+        .discount {
+            color: #dc3545;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Special Offers Section -->
+    <div class="offer-container">
+        <p class="offer-text">Check out our Special Offers and Discounts!</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-container">
+  
+        <div class="plant-container">
+            <div class="plant-image" style="background-image: url('aleovera.jpg');"></div>
+            <div class="plant-details">
+                <p class="plant-name"><b>Alovera</b></p>
+                <p class="plant-price" > ₹600<span class="discount"> (₹500)</span></p>
+            </div>
+        </div>
+
+        <!-- Plant 2 -->
+        <div class="plant-container">
+            <div class="plant-image" style="background-image: url('azalea.jpg');"></div>
+            <div class="plant-details">
+                <p class="plant-name"><b>azalea</b></p>
+                <p class="plant-price">₹1000 <span class="discount">(₹950)</span></p>
+            </div>
+        </div>
+        <div class="plant-container">
+            <div class="plant-image" style="background-image: url('cactus.jpg');"></div>
+            <div class="plant-details">
+                <p class="plant-name"><b>Cactus</b></p>
+                <p class="plant-price">₹3000<span class="discount">(₹2500)</span></p>
+            </div>
+        </div>
+        <div class="plant-container">
+            <div class="plant-image" style="background-image: url('chrysanthemum.jpg');"></div>
+            <div class="plant-details">
+                <p class="plant-name"><b>chrysanthemum</b></p>
+                <p class="plant-price">₹500 <span class="discount">(₹450)</span></p>
+            </div>
+        </div>
+        <div class="plant-container">
+            <div class="plant-image" style="background-image: url('daffodil.jpg');"></div>
+            <div class="plant-details">
+                <p class="plant-name"><b>daffodil</b></p>
+                <p class="plant-price">₹300 <span class="discount">(₹200)</span></p>
+            </div>
+        </div>
+        <div class="plant-container">
+            <div class="plant-image" style="background-image: url('fern.jpg');"></div>
+            <div class="plant-details">
+                <p class="plant-name"><b>Ferns</b></p>
+                <p class="plant-price">₹600<span class="discount">(₹599)</span></p>
+            </div>
+        </div>
+        <div class="plant-container">
+            <div class="plant-image" style="background-image: url('geranium.jpg');"></div>
+            <div class="plant-details">
+                <p class="plant-name"><b>geranium</b></p>
+                <p class="plant-price">₹700<span class="discount">(₹650)</span></p>
+            </div>
+        </div>
+        <div class="plant-container">
+            <div class="plant-image" style="background-image: url('hosta.jpg');"></div>
+            <div class="plant-details">
+                <p class="plant-name"><b>hosta</b></p>
+                <p class="plant-price">₹1500<span class="discount">(₹1400)</span></p>
+            </div>
+        </div>
+        <div class="plant-container">
+            <div class="plant-image" style="background-image: url('hydrange.jpg');"></div>
+            <div class="plant-details">
+                <p class="plant-name"><b>hydrange</b></p>
+                <p class="plant-price">₹1000 <span class="discount">(₹999)</span></p>
+            </div>
+        </div>
+        <div class="plant-container">
+            <div class="plant-image" style="background-image: url('lavender.jpg');"></div>
+            <div class="plant-details">
+                <p class="plant-name"><b>lavender</b></p>
+                <p class="plant-price">₹400 <span class="discount">(₹350)</span></p>
+            </div>
+        </div>
+        <div class="plant-container">
+            <div class="plant-image" style="background-image: url('lily.jpg');"></div>
+            <div class="plant-details">
+                <p class="plant-name"><b>lily</b></p>
+                <p class="plant-price">₹2000 <span class="discount">(₹1500)</span></p>
+            </div>
+        </div>
+        <div class="plant-container">
+            <div class="plant-image" style="background-image: url('rose.jpg');"></div>
+            <div class="plant-details">
+                <p class="plant-name"><b>Rose</b></p>
+                <p class="plant-price">₹1000 <span class="discount">(₹999)</span></p>
+            </div>
+        </div>
+        <div class="plant-container">
+            <div class="plant-image" style="background-image: url('snapdragon.jpg');"></div>
+            <div class="plant-details">
+                <p class="plant-name"><b>snapdragon</b></p>
+                <p class="plant-price">₹500 <span class="discount">(₹400)</span></p>
+            </div>
+        </div>
+        <div class="plant-container">
+            <div class="plant-image" style="background-image: url('sunflower.jpg');"></div>
+            <div class="plant-details">
+                <p class="plant-name"><b>sunflower</b></p>
+                <p class="plant-price">₹100 <span class="discount">(₹50)</span></p>
+            </div>
+        </div>
+        <div class="plant-container">
+            <div class="plant-image" style="background-image: url('tulip.jpg');"></div>
+            <div class="plant-details">
+                <p class="plant-name"><b>tulip</b></p>
+                <p class="plant-price">₹800 <span class="discount">(₹700)</span></p>
+            </div>
+        </div>
+        <div class="plant-container">
+            <div class="plant-image" style="background-image: url('bougainvilla.jpg');"></div>
+            <div class="plant-details">
+                <p class="plant-name"><b>bougainvilla</b></p>
+                <p class="plant-price">₹2000 <span class="discount">(₹1500)</span></p>
+            </div>
+        </div>
+        <div class="plant-container">
+            <div class="plant-image" style="background-image: url('spider.jpg');"></div>
+            <div class="plant-details">
+                <p class="plant-name"><b>spider</b></p>
+                <p class="plant-price">₹1100 <span class="discount">(₹999)</span></p>
+            </div>
+        </div>
+        <div class="plant-container">
+            <div class="plant-image" style="background-image: url('snake.jpg');"></div>
+            <div class="plant-details">
+                <p class="plant-name"><b>snake</b></p>
+                <p class="plant-price">₹1500 <span class="discount">(₹1200)</span></p>
+            </div>
+        </div>
+        <div class="plant-container">
+            <div class="plant-image" style="background-image: url('pothos.jpg');"></div>
+            <div class="plant-details">
+                <p class="plant-name"><b>pothos</b></p>
+                <p class="plant-price">₹1200 <span class="discount">(₹1100)</span></p>
+            </div>
+        </div>
+        <div class="plant-container">
+            <div class="plant-image" style="background-image: url('peacelily.jpg');"></div>
+            <div class="plant-details">
+                <p class="plant-name"><b>peacelily</b></p>
+                <p class="plant-price">₹2000 <span class="discount">(₹1500)</span></p>
+            </div>
+        </div>
+        <div class="plant-container">
+            <div class="plant-image" style="background-image: url('zz.jpg');"></div>
+            <div class="plant-details">
+                <p class="plant-name"><b>ZZ</b></p>
+                <p class="plant-price">₹5000 <span class="discount">(₹4999)</span></p>
+            </div>
+        </div>
+        <div class="plant-container">
+            <div class="plant-image" style="background-image: url('rubber.jpg');"></div>
+            <div class="plant-details">
+                <p class="plant-name"><b>rubber</b></p>
+                <p class="plant-price">₹9999 <span class="discount">(₹8999)</span></p>
+            </div>
+        </div>
+        <div class="plant-container">
+            <div class="plant-image" style="background-image: url('fiddleleaffig.jpg');"></div>
+            <div class="plant-details">
+                <p class="plant-name"><b>fiddleleaffig/b></p>
+                <p class="plant-price">₹1000 <span class="discount">(₹999)</span></p>
+            </div>
+        </div>
+        <div class="plant-container">
+            <div class="plant-image" style="background-image: url('jade.jpg');"></div>
+            <div class="plant-details">
+                <p class="plant-name"><b>jade</b></p>
+                <p class="plant-price">₹6000 <span class="discount">(₹5999)</span></p>
+            </div>
+        </div>
+        
+
+    </div>
+</body>
+</html>

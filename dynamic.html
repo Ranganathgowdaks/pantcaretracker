@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Color Changing Div</title>
+    <style>
+        #colorChangingDiv {
+            width: 200px;
+            height: 200px;
+            background-color: rgba(52, 152, 219, 0.8); /* Set an initial color with transparency */
+            transition: background-color 0.5s ease; /* Add a smooth transition effect */
+        }
+    </style>
+</head>
+<body>
+
+<div id="colorChangingDiv"></div>
+
+<script>
+    // JavaScript to dynamically change the color
+    function changeColor() {
+        var randomColor = getRandomColor();
+        document.getElementById("colorChangingDiv").style.backgroundColor = randomColor;
+    }
+
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = 'rgba(';
+        for (var i = 0; i < 3; i++) {
+            color += parseInt(letters[Math.floor(Math.random() * 16)], 16) + ', ';
+        }
+        color += Math.random().toFixed(1) + ')'; // Random alpha value between 0 and 1
+        return color;
+    }
+
+    // Change the color every 2 seconds (you can adjust this interval)
+    setInterval(changeColor, 2000);
+</script>
+
+</body>
+</html>

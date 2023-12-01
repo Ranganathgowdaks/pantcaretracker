@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Care Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #edf2f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #plantCareTracker {
+            background-color: #ffffff;
+            border: 2px solid #4299e1;
+            border-radius: 12px;
+            width: 400px;
+            padding: 30px;
+            margin: auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #4299e1;
+            text-align: center;
+        }
+
+        button {
+            background-color: #38a169;
+            color: #ffffff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        #detailsContainer {
+            display: none;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #2d3748;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #cbd5e0;
+            border-radius: 4px;
+        }
+
+        button.saveBtn {
+            background-color: #4299e1;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<div id="plantCareTracker">
+    <h2>Plant Care Tracker</h2>
+    <button onclick="showDetails()">View Details</button>
+
+    <div id="detailsContainer">
+        <h3>Plant Care Details</h3>
+        <label for="weather">Weather:</label>
+        <input type="text" id="weather" placeholder="Enter weather condition">
+
+        <label for="temperature">Temperature (°C):</label>
+        <input type="number" id="temperature" placeholder="Enter temperature">
+
+        <label for="sunlight">Sunlight Exposure:</label>
+        <select id="sunlight">
+            <option value="full">Full Sun</option>
+            <option value="partial">Partial Sun</option>
+            <option value="shade">Shade</option>
+        </select>
+
+        <label for="watered">Watered:</label>
+        <input type="checkbox" id="watered">
+
+        <label for="fertilized">Fertilized:</label>
+        <input type="checkbox" id="fertilized">
+
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" placeholder="Enter plant height">
+
+        <label for="healthCondition">Health Condition:</label>
+        <input type="text" id="healthCondition" placeholder="Enter health condition">
+
+        <label for="diseases">Diseases:</label>
+        <textarea id="diseases" placeholder="Enter any diseases"></textarea>
+
+        <label for="pruning">Last Pruning Date:</label>
+        <input type="date" id="pruning">
+
+        <label for="repotting">Last Repotting Date:</label>
+        <input type="date" id="repotting">
+
+        <button class="saveBtn" onclick="saveDetails()">Save Details</button>
+    </div>
+</div>
+
+<script>
+    function showDetails() {
+        var detailsContainer = document.getElementById("detailsContainer");
+        detailsContainer.style.display = "block";
+    }
+
+    function saveDetails() {
+        var weather = document.getElementById("weather").value;
+        var temperature = document.getElementById("temperature").value;
+        var sunlight = document.getElementById("sunlight").value;
+        var watered = document.getElementById("watered").checked;
+        var fertilized = document.getElementById("fertilized").checked;
+        var height = document.getElementById("height").value;
+        var healthCondition = document.getElementById("healthCondition").value;
+        var diseases = document.getElementById("diseases").value;
+        var pruningDate = document.getElementById("pruning").value;
+        var repottingDate = document.getElementById("repotting").value;
+
+        // You can process or store these details as needed
+        console.log("Weather: " + weather);
+        console.log("Temperature: " + temperature);
+        console.log("Sunlight: " + sunlight);
+        console.log("Watered: " + watered);
+        console.log("Fertilized: " + fertilized);
+        console.log("Height: " + height);
+        console.log("Health Condition: " + healthCondition);
+        console.log("Diseases: " + diseases);
+        console.log("Last Pruning Date: " + pruningDate);
+        console.log("Last Repotting Date: " + repottingDate);
+
+        // You can add further logic here, such as updating a growth chart, etc.
+    }
+</script>
+
+</body>
+</html>
